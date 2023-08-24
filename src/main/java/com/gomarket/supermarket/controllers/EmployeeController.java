@@ -89,6 +89,7 @@ public class EmployeeController extends HomeController implements Initializable 
         txtECity.getItems().addAll(dataSetter.setEmplooyeeCities());
         dataSetter.setEmployeeTableColumns(colID,colName,colNumber,colSalary,colCity,colDate);
         eTable.setItems(employeeRepository.getAllEmployees());
+        eTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
     }
 
 

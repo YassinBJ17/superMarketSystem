@@ -293,14 +293,14 @@
       </ImageView>
       <AnchorPane layoutX="183.0" layoutY="258.0" prefHeight="400.0" prefWidth="625.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="7.589743589743591" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="12.666666666666629" AnchorPane.topAnchor="257.99999999999994">
          <children>
-            <TableView fx:id="eTable" layoutX="29.0" layoutY="14.0" onMouseClicked="#selectEmployeeFromTable" prefHeight="372.0" prefWidth="595.0" AnchorPane.bottomAnchor="13.897435897435912" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="4.641025641025635" AnchorPane.topAnchor="12.000000000000057">
+            <TableView fx:id="eTable" layoutX="29.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#selectEmployeeFromTable" prefHeight="372.0" prefWidth="595.0" AnchorPane.bottomAnchor="13.897435897435912" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="4.641025641025635" AnchorPane.topAnchor="12.000000000000057">
                <columns>
-                  <TableColumn fx:id="colID" maxWidth="500.0" minWidth="-1.0" text="ID" />
-                  <TableColumn fx:id="colName" prefWidth="91.07696533203125" text="Name" />
-                  <TableColumn fx:id="colNumber" prefWidth="116.51278686523438" text="Phone Number" />
-                  <TableColumn fx:id="colSalary" prefWidth="57.4359130859375" text="Salary" />
-                  <TableColumn fx:id="colCity" minWidth="0.0" prefWidth="105.8460693359375" text="City" />
-                  <TableColumn fx:id="colDate" maxWidth="139.948716383714" minWidth="-Infinity" prefWidth="139.948716383714" resizable="false" text="Join Date" />
+                  <TableColumn fx:id="colID" maxWidth="80.0" minWidth="60.0" text="ID" />
+                  <TableColumn fx:id="colName" minWidth="185.0" prefWidth="185.4359130859375" text="Name" />
+                  <TableColumn fx:id="colNumber" maxWidth="200.0" minWidth="170.0" prefWidth="173.94873046875" text="Phone Number" />
+                  <TableColumn fx:id="colSalary" maxWidth="120.0" minWidth="110.0" prefWidth="114.05126953125" text="Salary" />
+                  <TableColumn fx:id="colCity" minWidth="140.0" prefWidth="141.12823486328125" text="City" />
+                  <TableColumn fx:id="colDate" maxWidth="200.0" minWidth="180.0" prefWidth="182.15380859375" resizable="false" text="Join Date" />
                </columns>
             </TableView>
          </children>

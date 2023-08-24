@@ -182,12 +182,12 @@
          <children>
             <TableView fx:id="pTable" layoutX="14.0" layoutY="14.0" onMouseClicked="#selectProductFromTable" prefHeight="372.0" prefWidth="595.0" AnchorPane.bottomAnchor="4.641025641025635" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="4.641025641025635" AnchorPane.topAnchor="12.0">
                <columns>
-                  <TableColumn fx:id="colID" prefWidth="85.79998779296875" text="ID" />
-                  <TableColumn fx:id="colName" prefWidth="137.0" text="Name" />
-                  <TableColumn fx:id="colNumber" prefWidth="91.199951171875" text="Number" />
-                  <TableColumn fx:id="colPrice" prefWidth="82.20001220703125" text="Price" />
-                  <TableColumn fx:id="colType" minWidth="0.0" prefWidth="99.79998779296875" text="Type" />
-                  <TableColumn fx:id="colDiscount" prefWidth="120.99993896484375" text="Discount" />
+                  <TableColumn fx:id="colID" maxWidth="80.0" minWidth="60.0" text="ID" />
+                  <TableColumn fx:id="colName" minWidth="185.0" prefWidth="186.0" text="Name" />
+                  <TableColumn fx:id="colNumber" maxWidth="150.0" minWidth="120.0" prefWidth="130.0" text="Number" />
+                  <TableColumn fx:id="colPrice" maxWidth="150.0" minWidth="115.0" prefWidth="120.0" text="Price" />
+                  <TableColumn fx:id="colType" maxWidth="180.0" minWidth="150.0" prefWidth="153.43585205078125" text="Type" />
+                  <TableColumn fx:id="colDiscount" maxWidth="160.0" minWidth="150.0" prefWidth="157.79488744491186" text="Discount" />
                </columns>
             </TableView>
          </children>

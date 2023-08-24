@@ -41,6 +41,7 @@ public class Utility {
             currentStage.close();
             stage.show();
         }
+        stage.setResizable(true);
         stage.setTitle(page);
         currentStage=stage;
     }

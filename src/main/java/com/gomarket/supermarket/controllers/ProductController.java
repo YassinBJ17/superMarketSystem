@@ -82,6 +82,7 @@ public class ProductController extends HomeController implements Initializable {
         txtPType.getItems().addAll(dataSetter.setProductTypes());
         dataSetter.setProductTableColumns(colID,colName,colNumber,colPrice,colType,colDiscount);
         pTable.setItems(productRepository.getAllProducts());
+        pTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
     }
 
 
