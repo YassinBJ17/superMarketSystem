@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1100.0" stylesheets="@../../../Styles/Styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gomarket.supermarket.controllers.HomeController">
+   <children>
+      <Button fx:id="btnServices" alignment="BASELINE_LEFT" contentDisplay="TOP" graphicTextGap="22.0" layoutX="26.0" layoutY="217.0" mnemonicParsing="false" onAction="#openServices" prefHeight="40.0" prefWidth="160.0" styleClass="buttonMenu" text="Services" textFill="#2d2d2d">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnProducts" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="26.0" layoutY="267.0" mnemonicParsing="false" onAction="#openProducts" prefHeight="40.0" prefWidth="160.0" styleClass="buttonMenu" text="Products">
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEmployees" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="26.0" layoutY="317.0" mnemonicParsing="false" onAction="#openEmployees" prefHeight="40.0" prefWidth="160.0" styleClass="buttonMenu" text="Employees">
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnStatistics" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="26.0" layoutY="367.0" mnemonicParsing="false" onAction="#openStatistics" prefHeight="40.0" prefWidth="160.0" styleClass="buttonMenu" text="Statistics">
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnServices1" alignment="BASELINE_LEFT" contentDisplay="TOP" graphicTextGap="22.0" layoutX="26.0" layoutY="167.0" mnemonicParsing="false" onAction="#openHome" prefHeight="40.0" prefWidth="160.0" styleClass="buttonMenuHover" text="Home " textFill="#2d2d2d">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Ubuntu" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.2910216450691223" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <AnchorPane layoutX="174.0" layoutY="105.0" AnchorPane.bottomAnchor="23.641025641025635" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="114.0">
+         <children>
+            <Pane fx:id="homePane" layoutX="9.0" layoutY="9.0" prefHeight="542.0" prefWidth="904.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="9.0">
+               <styleClass>
+                  <String fx:value="radius" />
+                  <String fx:value="pane" />
+               </styleClass>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.28999999165534973" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                     <Label layoutX="31.0" layoutY="24.0" prefHeight="54.0" prefWidth="365.0" text="Welcome to GO Store">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="25.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.282945716103842">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.5417789816856384" green="0.5417789816856384" blue="0.5417789816856384" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.056603774428367615" green="0.056603774428367615" blue="0.056603774428367615" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="171.0" layoutY="167.0" stroke="WHITE" strokeType="INSIDE" width="30.0" />
+      <ImageView layoutX="36.0" layoutY="271.0">
+         <image>
+            <Image url="@../../../Images/conveyorbelt_118075.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.4" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.97">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView layoutX="36.0" layoutY="321.0">
+         <image>
+            <Image url="@../../../Images/boss3_118010.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.4" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.97">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView layoutX="36.0" layoutY="371.0">
+         <image>
+            <Image url="@../../../Images/graphmagnifier_118081.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.4" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.97">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView layoutX="36.0" layoutY="221.0">
+         <image>
+            <Image url="@../../../Images/fooddome_118034.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.4" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.97">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView layoutX="36.0" layoutY="171.0">
+         <image>
+            <Image url="@../../../Images/apartment_118092.png" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.28">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="183.0" layoutY="35.0" prefHeight="62.0" prefWidth="904.0" style="-fx-background-color: white;" styleClass="radius" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="10.794871794871824">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="717.0" layoutY="14.0" AnchorPane.rightAnchor="147.20512820512818">
+               <image>
+                  <Image url="@../../../Images/avatardefault_92824.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="764.0" layoutY="19.0" AnchorPane.rightAnchor="110.20512820512818">
+               <image>
+                  <Image url="@../../../Images/1486564402-settings_81520.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="844.0" layoutY="19.0" onMouseClicked="#openLogin" AnchorPane.rightAnchor="30.205128205128176">
+               <image>
+                  <Image url="@../../../Images/Exit-Page_icon-icons.com_53732.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField fx:id="txtUSER" layoutX="23.0" layoutY="14.0" prefHeight="34.0" prefWidth="485.0" promptText="Search" style="-fx-border-radius: 30;">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="468.0" layoutY="17.0" opacity="0.29">
+               <image>
+                  <Image url="@../../../Images/3844432-magnifier-search-zoom_110300.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="803.0" layoutY="19.0" onMouseClicked="#fullScreen" AnchorPane.rightAnchor="71.20512820512818">
+               <image>
+                  <Image url="@../../../Images/fullscreen (1).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="604.0" layoutY="25.0" prefHeight="15.0" prefWidth="101.0" text="Welcome, Admin" AnchorPane.rightAnchor="198.46153846153845">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.25" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <Label layoutX="74.0" layoutY="39.0" prefHeight="54.0" prefWidth="133.0" text="Store">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="27.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.282945716103842">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.45098039507865906" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7358490824699402" green="0.33420100808143616" blue="0.0055798981338739395" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="29.0" layoutY="39.0" prefHeight="54.0" prefWidth="77.0" text="GO">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="27.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.7480619979459187" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.20000000298023224" green="0.6000000238418579" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.16834735870361328" green="0.48383867740631104" blue="0.7789757251739502" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+   </children>
+   <effect>
+      <Glow level="0.25" />
+   </effect>
+</AnchorPane>
